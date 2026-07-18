@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Email Manager - Download</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0B1A39 0%, #1a2a5e 50%, #0B1A39 100%);
+            color: #EDEFF6;
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #D4AF37, #B8860B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .tagline {
+            font-size: 18px;
+            color: #C9D1E3;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .hero .description {
+            font-size: 16px;
+            color: #C9D1E3;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        .download-section {
+            background: rgba(18, 34, 74, 0.8);
+            border: 1px solid #B8860B;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .download-section h2 {
+            font-size: 24px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37, #B8860B);
+            color: #0B1A39;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+        .download-btn.secondary {
+            background: transparent;
+            border: 2px solid #D4AF37;
+            color: #D4AF37;
+        }
+        .download-btn.secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+        }
+        .file-info {
+            font-size: 14px;
+            color: #C9D1E3;
+            margin-top: 15px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .feature-card {
+            background: rgba(18, 34, 74, 0.6);
+            border: 1px solid rgba(184, 134, 11, 0.3);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .feature-card h3 {
+            color: #D4AF37;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: #C9D1E3;
+            line-height: 1.5;
+        }
+        .install-steps {
+            background: rgba(18, 34, 74, 0.6);
+            border: 1px solid rgba(184, 134, 11, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        .install-steps h2 {
+            color: #D4AF37;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .step-num {
+            background: #D4AF37;
+            color: #0B1A39;
+            font-weight: 700;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+        .step-text {
+            font-size: 15px;
+            color: #EDEFF6;
+            line-height: 1.5;
+            padding-top: 4px;
+        }
+        .step-text code {
+            background: rgba(184, 134, 11, 0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 13px;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid rgba(184, 134, 11, 0.3);
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #D4AF37;
+            text-decoration: none;
+        }
+        .footer a:hover { text-decoration: underline; }
+        .screenshot {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            border: 2px solid #B8860B;
+            margin: 30px auto;
+            display: block;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(40, 167, 69, 0.2);
+            color: #28a745;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            .download-btn { padding: 14px 30px; font-size: 16px; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="badge">v2.0.0 - Latest Release</div>
+            <h1>Bulk Email Manager</h1>
+            <p class="tagline">Professional Email Campaign Management Made Simple</p>
+            <p class="description">
+                A powerful desktop application for managing contacts, creating beautiful email templates,
+                and running bulk email campaigns with advanced features like DKIM signing, segmentation,
+                and GSM SMS support.
+            </p>
+        </div>
+
+        <div class="download-section">
+            <h2>Download Now</h2>
+            <a href="https://github.com/Johnstonesechele/BulkEmailManager/releases/download/v2.0.0/BulkEmailManager-2.0.0-Portable.zip" class="download-btn">
+                Download Portable Version
+            </a>
+            <p class="file-info">
+                BulkEmailManager-2.0.0-Portable.zip &mdash; ~112 MB &mdash; No installation required
+            </p>
+            <br>
+            <p style="font-size: 14px; color: #C9D1E3;">
+                Just download, extract, and run <code>BulkEmailManager.exe</code>
+            </p>
+        </div>
+
+        <div class="install-steps">
+            <h2>How to Install &amp; Run</h2>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    Click the <strong>Download</strong> button above to download the ZIP file.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    Right-click the downloaded ZIP file and select <strong>"Extract All..."</strong> or use any unzip tool.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                    Open the extracted folder and double-click <code>BulkEmailManager.exe</code> to launch the app.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div class="step-text">
+                    On first run, copy <code>.env.example</code> to <code>.env.it</code> and fill in your SMTP email credentials.
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Contact Management</h3>
+                <p>Import contacts from CSV files, merge multiple lists, remove duplicates, and filter by segment tags.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Email Templates</h3>
+                <p>Create HTML and plain text templates with Jinja2 personalization. Preview before sending.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Bulk Campaigns</h3>
+                <p>Send thousands of personalized emails with smart pacing, automatic retries, and Gmail block detection.</p>
+            </div>
+            <div class="feature-card">
+                <h3>DKIM Signing</h3>
+                <p>Optional DKIM authentication for improved email deliverability and sender reputation.</p>
+            </div>
+            <div class="feature-card">
+                <h3>File Attachments</h3>
+                <p>Attach up to 10 files per campaign. Manage attachments in the built-in Assets tab.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Bulk SMS</h3>
+                <p>Send SMS messages via GSM modem. Auto-detect serial ports and manage message campaigns.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Surveys</h3>
+                <p>Create surveys with text, multiple-choice, and checkbox questions. Track responses in the database.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Dark Theme</h3>
+                <p>Beautiful Dark Blue and Gold interface designed for extended use without eye strain.</p>
+            </div>
+        </div>
+
+        <div class="install-steps">
+            <h2>Quick Setup Guide</h2>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    Open the <strong>Contacts (Email)</strong> tab and click <strong>"Load CSV"</strong> to import your contact list.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    Go to <strong>Email Templates (Legacy)</strong> and click <strong>"Load HTML"</strong> to load your email template, or write one in the editor.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                    Switch to the <strong>Campaign</strong> tab, select your environment, enter a subject line, and click <strong>"Preview"</strong> to test.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div class="step-text">
+                    When ready, click <strong>"Start Sending"</strong> to begin your campaign. Monitor progress in the <strong>Logs</strong> tab.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="https://github.com/Johnstonesechele/BulkEmailManager">View on GitHub</a> &mdash;
+                <a href="https://github.com/Johnstonesechele/BulkEmailManager/releases">All Releases</a> &mdash;
+                <a href="https://github.com/Johnstonesechele/BulkEmailManager#readme">Documentation</a>
+            </p>
+            <p style="margin-top: 10px; font-size: 13px; color: #C9D1E3;">
+                &copy; 2026 Bulk Email Manager &mdash; Open Source under MIT License
+            </p>
+        </div>
+    </div>
+</body>
+</html>

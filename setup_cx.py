@@ -32,14 +32,6 @@ bdist_msi_options = {
     "upgrade_code": "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}",
     "add_to_path": False,
     "initial_target_dir": r"[ProgramFilesFolder]\BulkEmailManager",
-    "install_icon": None,
-    "uninstall_icon": None,
-    "title": "Bulk Email Manager",
-    "author": "Bulk Email Manager",
-    "manufacturer": "Bulk Email Manager",
-    "version": "2.0.0",
-    "compressed": True,
-    "install_mode": "perMachine",
 }
 
 setup(
@@ -54,7 +46,6 @@ setup(
     executables=[
         Executable(
             "bulk_email.py",
-            base="Win32GUI",
             target_name="BulkEmailManager.exe",
             shortcut_name="Bulk Email Manager",
             shortcut_dir="DesktopFolder",
