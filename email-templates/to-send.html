@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMINDER: August Professional Development Programs - Registration Closing Soon!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #3B5998, #2C4A7E);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .logo {
+            color: #D4AF37;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 13px;
+            margin-bottom: 20px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 30px 25px;
+        }
+
+        .reminder-banner {
+            background: linear-gradient(135deg, #dc3545, #fd7e14);
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .reminder-title {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .reminder-text {
+            font-size: 14px;
+            opacity: 0.95;
+        }
+
+        .intro-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #D4AF37;
+        }
+
+        .intro-text {
+            font-size: 15px;
+            color: #555;
+            margin: 0;
+        }
+
+        .programs-summary {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .program-card {
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            transition: transform 0.2s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .program-title {
+            color: #3B5998;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .program-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .program-detail {
+            display: flex;
+            align-items: center;
+        }
+
+        .detail-icon {
+            margin-right: 6px;
+            font-size: 14px;
+            width: 16px;
+        }
+
+        .program-price {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .deadline-alert {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .register-btn {
+            background: linear-gradient(135deg, #D4AF37, #B8941F);
+            color: #3B5998;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+        }
+
+        .register-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(212, 175, 55, 0.4);
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin: 30px 0;
+        }
+
+        .summary-table th {
+            background: linear-gradient(135deg, #3B5998, #2C4A7E);
+            color: white;
+            padding: 12px 8px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .summary-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .summary-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .deadline-urgent {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #3B5998, #2C4A7E);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .cta-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .cta-text {
+            font-size: 14px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .contact-icon {
+            margin-right: 6px;
+            font-size: 14px;
+        }
+
+        .main-register-btn {
+            background: linear-gradient(135deg, #D4AF37, #B8941F);
+            color: #3B5998;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .main-register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .footer {
+            background-color: #3B5998;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-contact {
+            margin: 8px 0;
+            font-size: 13px;
+        }
+
+        .footer-website a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                box-shadow: none;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .program-details {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+            
+            .summary-table {
+                font-size: 10px;
+            }
+            
+            .summary-table th,
+            .summary-table td {
+                padding: 6px 4px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">ASCENT INSTITUTE</div>
+        <div class="tagline">Equipping People, Transforming The World</div>
+        <h1>REMINDER: August Professional Development Programs</h1>
+    </div>
+
+    <div class="content">
+        <div class="intro-section">
+            <div class="intro-text">
+                <strong>This is a friendly reminder</strong> about our upcoming August professional development programs. We previously shared these exciting opportunities with you, and we wanted to ensure you don't miss these career-transforming programs.
+            </div>
+        </div>
+
+        <div class="programs-summary">
+            <!-- Fleet Management -->
+            <div class="program-card">
+                <div class="program-title">🚛 FLEET & TRANSPORT OPERATIONS MANAGEMENT</div>
+                <div class="program-details">
+                    <div class="program-detail">
+                        <span class="detail-icon">📅</span>
+                        <span>18th - 22nd August 2025</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">📍</span>
+                        <span>Naivasha, Kenya</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">⏱️</span>
+                        <span>5 Days Intensive Program</span>
+                    </div>
+                </div>
+                <div class="program-price">KES 75,000 (Exclusive of VAT)</div>
+                
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #D4AF37; font-size: 13px;">
+                    <p><strong>Transform your fleet operations expertise</strong> with advanced strategies, cutting-edge technologies, and proven methodologies essential for exceptional fleet management in today's logistics landscape.</p>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 14px; font-weight: bold; margin-bottom: 10px;">🎯 Key Learning Areas:</div>
+                    <div style="font-size: 12px; line-height: 1.4;">
+                        • Fleet Planning & Strategy • Fleet Management Systems<br>
+                        • Safety & Compliance • Cost Optimization
+                    </div>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 13px; font-weight: bold; margin-bottom: 8px;">👥 Perfect For:</div>
+                    <div style="font-size: 11px; color: #666;">
+                        Transport Managers, Fleet Supervisors, Logistics Officers, Operations Managers, Supply Chain Managers, Safety Officers
+                    </div>
+                </div>
+
+                <a href="mailto:info@ascent-institute.com?subject=Fleet Operations Registration - August 2025" class="register-btn">Register Now</a>
+            </div>
+
+            <!-- AI Finance -->
+            <div class="program-card">
+                <div class="program-title">💳 ELECTRONIC CASH MANAGEMENT & AI SOLUTIONS</div>
+                <div class="program-details">
+                    <div class="program-detail">
+                        <span class="detail-icon">📅</span>
+                        <span>18th- 22nd August 2025</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">📍</span>
+                        <span>Naivasha, Kenya</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">⏱️</span>
+                        <span>5 Days Advanced Program</span>
+                    </div>
+                </div>
+                <div class="program-price">KES 100,000 (Exclusive of VAT)</div>
+                
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #D4AF37; font-size: 13px;">
+                    <p><strong>Master the future of financial technology</strong> with cutting-edge electronic cash management systems, AI-powered fraud prevention, and advanced cybersecurity frameworks designed for the digital financial landscape.</p>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 14px; font-weight: bold; margin-bottom: 10px;">🎯 Key Learning Areas:</div>
+                    <div style="font-size: 12px; line-height: 1.4;">
+                        • E-Cash Management • AI & Machine Learning<br>
+                        • Fraud Prevention • Blockchain & Crypto
+                    </div>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 13px; font-weight: bold; margin-bottom: 8px;">👥 Perfect For:</div>
+                    <div style="font-size: 11px; color: #666;">
+                        Finance Officers, IT Officers, Risk Managers, Bank Staff, Compliance Officers, Cybersecurity Specialists
+                    </div>
+                </div>
+
+                <a href="mailto:info@ascent-institute.com?subject=AI Finance Registration - August 2025" class="register-btn">Register Now</a>
+            </div>
+
+            <!-- ESG Governance -->
+            <div class="program-card">
+                <div class="program-title">🌍 ESG LEADERSHIP & CLIMATE RESILIENCE GOVERNANCE</div>
+                <div class="program-details">
+                    <div class="program-detail">
+                        <span class="detail-icon">📅</span>
+                        <span>23rd - 30th August 2025</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">📍</span>
+                        <span>Cape Town, South Africa</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">⏱️</span>
+                        <span>8 Days Executive Program</span>
+                    </div>
+                </div>
+                <div class="program-price">USD 1,350 (Exclusive of VAT)</div>
+                
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #D4AF37; font-size: 13px;">
+                    <p><strong>Transform your approach to sustainable governance</strong> with comprehensive ESG leadership strategies and climate resilience frameworks specifically designed for Africa's evolving business landscape.</p>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 14px; font-weight: bold; margin-bottom: 10px;">🎯 Key Learning Areas:</div>
+                    <div style="font-size: 12px; line-height: 1.4;">
+                        • Sustainable Board Leadership • Climate Risk Management<br>
+                        • ESG Analytics • Stakeholder Capitalism
+                    </div>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 13px; font-weight: bold; margin-bottom: 8px;">👥 Perfect For:</div>
+                    <div style="font-size: 11px; color: #666;">
+                        Board Directors, Sustainability Officers, Risk Directors, Governance Professionals, ESG Specialists, Strategy Executives
+                    </div>
+                </div>
+
+                <a href="mailto:info@ascent-institute.com?subject=ESG Governance Registration - August 2025" class="register-btn">Register Now</a>
+            </div>
+
+            <!-- Strategic Procurement -->
+            <div class="program-card">
+                <div class="program-title">📋 STRATEGIC PROCUREMENT EXCELLENCE & PPPs</div>
+                <div class="program-details">
+                    <div class="program-detail">
+                        <span class="detail-icon">📅</span>
+                        <span>25th - 29th August 2025</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">📍</span>
+                        <span>Diani, Kenya</span>
+                    </div>
+                    <div class="program-detail">
+                        <span class="detail-icon">⏱️</span>
+                        <span>5 Days Professional Program</span>
+                    </div>
+                </div>
+                <div class="program-price">KES 65,000 (Exclusive of VAT)</div>
+                
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #D4AF37; font-size: 13px;">
+                    <p><strong>Master strategic procurement excellence</strong> with advanced procurement strategies, PPP frameworks, and innovative approaches essential for excellence in modern procurement practices.</p>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 14px; font-weight: bold; margin-bottom: 10px;">🎯 Key Learning Areas:</div>
+                    <div style="font-size: 12px; line-height: 1.4;">
+                        • Strategic Procurement Planning • PPP Frameworks<br>
+                        • Procurement Analytics • Legal & Regulatory Compliance
+                    </div>
+                </div>
+
+                <div style="margin: 15px 0;">
+                    <div style="color: #3B5998; font-size: 13px; font-weight: bold; margin-bottom: 8px;">👥 Perfect For:</div>
+                    <div style="font-size: 11px; color: #666;">
+                        Procurement Officers, Supply Chain Managers, PPP Coordinators, Finance Directors, Legal Counsel, Project Managers
+                    </div>
+                </div>
+
+                <a href="mailto:info@ascent-institute.com?subject=Strategic Procurement Registration - August 2025" class="register-btn">Register Now</a>
+            </div>
+        </div>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Program</th>
+                    <th>Dates</th>
+                    <th>Location</th>
+                    <th>Investment</th>
+                    <th>Focus Area</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Fleet Operations</strong></td>
+                    <td>Aug 18-22</td>
+                    <td>Naivasha, KE</td>
+                    <td>KES 75,000</td>
+                    <td>Operations & Logistics</td>
+                </tr>
+                <tr>
+                    <td><strong>AI Finance</strong></td>
+                    <td>Aug 18-22</td>
+                    <td>Naivasha, KE</td>
+                    <td>KES 100,000</td>
+                    <td>Finance & Technology</td>
+                </tr>
+                <tr>
+                    <td><strong>ESG Governance</strong></td>
+                    <td>Aug 23-30</td>
+                    <td>Cape Town, SA</td>
+                    <td>USD 1,350</td>
+                    <td>Governance & Sustainability</td>
+                </tr>
+                <tr>
+                    <td><strong>Strategic Procurement</strong></td>
+                    <td>Aug 25-29</td>
+                    <td>Diani, KE</td>
+                    <td>KES 65,000</td>
+                    <td>Procurement & PPPs</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cta-section">
+            <div class="cta-title">🎯 Secure Your Spot Today!</div>
+            <div class="cta-text">
+                Spaces are filling up fast! Each program includes expert facilitation, comprehensive materials, networking opportunities, and professional certification. Don't let this opportunity pass you by.
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span>+254 794-141 414</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>info@ascent-institute.com</span>
+                </div>
+            </div>
+
+            <a href="mailto:info@ascent-institute.com?subject=August 2025 Programs Registration Inquiry" class="main-register-btn">Register Today</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-contact">
+            Email: <a href="mailto:info@ascent-institute.com">info@ascent-institute.com</a> | Phone: +254 794-141 414
+        </div>
+        <div class="footer-website">
+            <a href="http://www.ascent-institute.com" target="_blank">www.ascent-institute.com</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

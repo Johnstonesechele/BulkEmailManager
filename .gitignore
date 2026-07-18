@@ -1,0 +1,41 @@
+# Environment files (contain secrets)
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+
+# Build output
+dist/
+build/
+installer/output/
+
+# Database
+*.db
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# MiMoCode
+.mimocode/
+
+# User data directories (users provide their own contacts/assets)
+data/*
+!data/.gitkeep
+!data/contacts.csv
+emails/*
+!emails/.gitkeep
+assets/*
+!assets/.gitkeep

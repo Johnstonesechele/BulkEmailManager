@@ -1,0 +1,3 @@
+Emails,FirstName,LastName,Segment,cc,bcc
+john.doe@example.com,John,Doe,General,,
+jane.smith@example.com,Jane,Smith,VIP,,admin@example.com

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent Institute - Email Delivery Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .test-banner {
+            background-color: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .logo-section {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #ffffff;
+        }
+
+        .logo-section img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+        }
+
+        .header {
+            background-color: #3B5998;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 30px;
+        }
+
+        .test-info {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .test-checklist {
+            background-color: #f8f9fa;
+            border-left: 4px solid #D4AF37;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .check-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .check-box {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #28a745;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .test-links {
+            background-color: #e3f2fd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .test-link {
+            display: block;
+            color: #3B5998;
+            text-decoration: underline;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .test-link:hover {
+            background-color: #f0f0f0;
+        }
+
+        .test-button {
+            background-color: #D4AF37;
+            color: #3B5998;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .test-images {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .test-image {
+            max-width: 100px;
+            height: 100px;
+            background-color: #e0e0e0;
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #3B5998;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .test-data {
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                box-shadow: none;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Test Banner -->
+    <div class="test-banner">
+        🧪 EMAIL DELIVERY TEST - NOT FOR PRODUCTION USE 🧪
+    </div>
+
+    <!-- Logo Section -->
+    <div class="logo-section">
+        <img src="https://da9cgnz0cnbi2.cloudfront.net/logo-2.png" alt="Ascent Institute - Test Email" crossorigin="anonymous">
+    </div>
+
+    <div class="header">
+        <h1>BULK EMAIL DELIVERY TEST</h1>
+    </div>
+
+    <div class="content">
+        <div class="test-info">
+            <h2>📧 Email System Test</h2>
+            <p><strong>Test ID:</strong> TEST-{{TEST_ID}}</p>
+            <p><strong>Recipient:</strong> {{RECIPIENT_EMAIL}}</p>
+            <p><strong>Send Time:</strong> {{SEND_TIMESTAMP}}</p>
+            <p><strong>Campaign:</strong> test/p>
+        </div>
+
+        <h3>Email Rendering Checklist:</h3>
+        <div class="test-checklist">
+            <div class="check-item">
+                <span class="check-box"></span>
+                <span>Logo displays correctly</span>
+            </div>
+            <div class="check-item">
+                <span class="check-box"></span>
+                <span>Colors render properly (Blue: #3B5998, Gold: #D4AF37)</span>
+            </div>
+            <div class="check-item">
+                <span class="check-box"></span>
+                <span>Fonts display correctly</span>
+            </div>
+            <div class="check-item">
+                <span class="check-box"></span>
+                <span>Links are clickable</span>
+            </div>
+            <div class="check-item">
+                <span class="check-box"></span>
+                <span>Buttons render properly</span>
+            </div>
+            <div class="check-item">
+                <span class="check-box"></span>
+                <span>Mobile responsive layout works</span>
+            </div>
+            <div class="check-item">
+                <span class="check-box"></span>
+                <span>No spam folder delivery</span>
+            </div>
+        </div>
+
+        <h3>Test Links:</h3>
+        <div class="test-links">
+            <a href="mailto:info@ascent-institute.com?subject=Test Email Response" class="test-link">📧 Reply Test Link</a>
+            <a href="http://www.ascent-institute.com" target="_blank" class="test-link">🌐 Website Test Link</a>
+            <a href="tel:+254794141414" class="test-link">📱 Phone Test Link</a>
+            <a href="#unsubscribe" class="test-link">🚫 Unsubscribe Test Link</a>
+        </div>
+
+        <h3>Button Test:</h3>
+        <div style="text-align: center;">
+            <a href="mailto:info@ascent-institute.com?subject=Test Button Clicked" class="test-button">Test Button Click</a>
+        </div>
+
+        <h3>Image Loading Test:</h3>
+        <div class="test-images">
+            <div class="test-image" style="background-image: url('/placeholder.svg?height=100&width=100'); background-size: cover;"></div>
+            <div class="test-image" style="background-color: #3B5998;"></div>
+            <div class="test-image" style="background-color: #D4AF37;"></div>
+        </div>
+
+        <div class="test-data">
+            <strong>Technical Test Data:</strong><br>
+            User Agent: {{USER_AGENT}}<br>
+            IP Address: {{IP_ADDRESS}}<br>
+            Delivery Route: {{DELIVERY_ROUTE}}<br>
+            Template Version: v2.1<br>
+            Test Date: {{CURRENT_DATE}}
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background-color: #e8f5e8; border-radius: 8px;">
+            <h4>✅ If you received this email:</h4>
+            <p><strong>This shows that the campaign system is working as intended.</strong></p>
+            <p>1. Check all visual elements render correctly</p>
+            <p>2. Test all links and buttons</p>
+            <p>3. Verify mobile responsiveness</p>
+            <p>4. Confirm it didn't land in spam folder</p>
+            <p>5. Reply with "TEST SUCCESSFUL" to confirm delivery</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div style="font-size: 18px; font-weight: bold; margin-bottom: 15px;">Ascent Institute - Email Test</div>
+        <div style="font-size: 14px;">Email: info@ascent-institute.com | Phone: +254 794-141 414</div>
+        <div style="margin-top: 15px;">
+            <a href="http://www.ascent-institute.com" target="_blank" style="color: white; text-decoration: underline;">www.ascent-institute.com</a>
+        </div>
+        <div style="margin-top: 20px; font-size: 12px; opacity: 0.8;">
+            This is a test email. Please do not forward or share.
+        </div>
+    </div>
+</div>
+</body>
+</html>
