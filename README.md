@@ -43,7 +43,7 @@ Copy the example environment file and fill in your SMTP credentials:
 cp .env.example .env.it
 ```
 
-Edit `.env.it` (or create `.env.pension`, `.env.governance`) with your email provider details:
+Edit `.env.it` (or create `your own environment file`) with your email provider details:
 
 ```
 EMAIL_USERNAME=you@example.com
