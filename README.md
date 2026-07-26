@@ -18,7 +18,7 @@ A full-featured desktop GUI application for managing contacts, email/SMS templat
 
 ## Quick Start (Pre-built Installer)
 
-Download the latest release from the [Releases](https://github.com/your-username/bulk-email-manager/releases) page and run the installer.
+Download the latest release from the [Releases](https://github.com/Johnstonesechele/bulk-email-manager/releases) page and run the installer.
 
 ## Install from Source
 
